@@ -77,7 +77,7 @@ const TrashBox = () => {
         />
       </div>
       <div className='mt-2 px-1 pb-1'>
-        <p className='hidden last:block text-xs text-center text-muted-foreground'>
+        <p className='hidden mb-2 last:block text-xs text-center text-muted-foreground'>
           No pages found
         </p>
 
