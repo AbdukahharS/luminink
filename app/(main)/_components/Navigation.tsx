@@ -23,6 +23,7 @@ import {
   PopoverContent,
 } from '@/components/ui/popover'
 import useSearch from '@/hooks/useSearch'
+import { useSettings } from '@/hooks/useSettings'
 
 import UserItem from './UserItem'
 import Item from './Item'
@@ -30,6 +31,7 @@ import DocumentList from './DocumentList'
 import TrashBox from './TrashBox'
 
 const Navigation = () => {
+  const settings = useSettings()
   const search = useSearch()
   const pathname = usePathname()
   const isMobile = useMediaQuery('(max-width: 768px)')
@@ -153,7 +155,7 @@ const Navigation = () => {
         <div>
           <UserItem />
           <Item label='Search' icon={Search} isSearch onClick={search.onOpen} />
-          <Item label='Settings' icon={Settings} onClick={() => {}} />
+          <Item label='Settings' icon={Settings} onClick={settings.onOpen} />
           <Item onClick={handleCreate} label='New Page' icon={PlusCircle} />
         </div>
         <div className='mt-4'>
