@@ -22,7 +22,7 @@ const ConfirmModal = ({ children, onConfirm }: ConfirmModalProps) => {
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     e.stopPropagation()
-    // onConfirm()
+    onConfirm()
   }
 
   return (
