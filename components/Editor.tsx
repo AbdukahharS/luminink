@@ -2,10 +2,10 @@
 
 import { PartialBlock } from '@blocknote/core'
 import { useCreateBlockNote } from '@blocknote/react'
-import { BlockNoteView } from '@blocknote/shadcn'
+import { BlockNoteView } from '@blocknote/mantine'
 import { useTheme } from 'next-themes'
 
-import '@blocknote/shadcn/style.css'
+import '@blocknote/mantine/style.css'
 import '@blocknote/core/fonts/inter.css'
 
 interface EditorProps {
